@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkas"
+    android:transitionGroup="true"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/editText"
+            android:layout_marginTop="146dp"
+            android:hint="Söyletmek istediğiniz yazıyı giriniz..."
+            android:textColor="#469EE4"
+            android:textColorHint="#DCB6B6"
+            android:fontFamily="@font/skyline1"
+            android:textSize="24dp"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="DINLEMEYE BASLA"
+            android:backgroundTint="#CD4E26"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/monaco"
+            app:icon="@android:drawable/ic_lock_silent_mode_off" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yazi"
+            android:layout_marginTop="46dp"
+            android:hint="Konuştuğunuzda sonuç metni buraya aktarılır"
+            android:textSize="24dp"
+            android:fontFamily="@font/skyline1"
+            android:textColor="#FFEB3B"
+            android:textColorHint="#DCB6B6" />
+
+        <Button
+            android:id="@+id/mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Konusmaya Basla"
+            android:backgroundTint="#CD4E26"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/monaco"
+            app:icon="@android:drawable/ic_btn_speak_now"
+            android:layout_marginBottom="120dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
